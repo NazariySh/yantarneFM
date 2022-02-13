@@ -1,0 +1,399 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'e-Ukraine', sans-serif;
+    outline: none;
+border: none;
+text-decoration: none;
+text-transform: capitalize;
+transition: all .2s linear;
+font-size: 16px;
+}
+html{
+font-size: 62.5%;
+overflow-x: hidden;
+scroll-behavior: smooth;
+scroll-padding-top: 6rem;
+}
+body{
+padding: 1rem 5%;
+}
+header{
+    top: 0; left: 0;right: 0;
+   position: relative;
+    padding: 0 5% 0 5%;
+    display: flex;
+   
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+}
+header .logo_place{
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    
+
+}
+header .logo_place .logo{
+    background: url('img/icon_content.png');
+    width: 164px;
+    height: 65.31px;
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+    
+}
+header .logo_place .insta{
+     width: 20px;
+     height: 20px;
+     background: url("img/instagram.png");
+     cursor: pointer;
+   
+    
+}
+header .logo_place .vector{
+
+     width: 24px;
+     height: 10.94px;
+     background: url("img/Vector.png");
+     cursor: pointer;
+    
+ 
+    
+}
+header .logo_place .facebook{
+     width: 10.5px;
+     height: 20px;
+     background: url("img/facebook.png");
+     cursor: pointer;
+  
+  
+    
+}
+.radio{
+min-height: 90vh;
+    padding: 1rem 0 1rem 5% ;
+   width: 100%;
+    display: flex;
+  
+   
+  flex-wrap: wrap;
+  
+
+}
+.radio .nowPlaying{
+    display: flex;
+    flex: 5 1 50rem;
+    padding: 5rem 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+.radio .nowPlaying .img_place{
+    padding: 2rem;
+  flex: 1 1 30rem;
+    background: url("img/main.png");
+   width: 406px;
+   height: 399px;
+   background-position: center;
+   background-size: cover;
+}
+.radio .nowPlaying .music_name{
+    flex: 1 1 30rem;
+    margin-left: 105px;
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.radio .nowPlaying .music_name h4{
+   font-weight: 900;
+   float: left;
+}
+.radio .nowPlaying .music_name .name{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-weight: 900;
+    font-size: 30px;
+}
+.radio .nowPlaying .music_name  div button{
+    background: none;
+    border-radius: 50%;
+    border: 1px solid #666;
+   width: 50px;
+   height: 50px;
+  
+  
+}
+.radio .nowPlaying .music_name  div button i{
+    color: #999;
+    font-size: 30px;
+   position: relative;
+}
+.radio .nowPlaying .music_name  div button{
+    margin: 5px;
+}
+.radio .nowPlaying .music_name  div{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.radio .previous-songs{
+    padding: 2rem;
+    flex: 1 1 20rem;
+
+}
+.radio .previous-songs #rbcloud_recent13438 ul{
+    list-style: none;
+    padding: 1rem;
+}
+.radio .previous-songs #rbcloud_recent13438 ul li{
+       background-color: #f3f3e6;
+       margin-top: 5px;
+       font-size: 12px;
+       padding: 1rem;
+}
+.radio .previous-songs h3{
+    text-align: center;
+   
+    font-weight: 800;
+}
+footer{
+    display: flex;
+    
+    border-top: 1px solid #333;
+    flex-wrap: wrap;
+}
+footer .sponsors{
+    flex: 1 1 20rem;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+ 
+    align-items: center;
+   
+}
+footer .sponsors h2{
+      font-size: 30px;
+    width: 100%;
+    font-weight: 800;
+  
+     
+    
+}
+footer .sponsors .box{
+    flex: 1 1 6.5rem;
+}
+footer .sponsors .box2{
+    flex: 1 1 16.5rem;
+}
+footer .sponsors .box img{
+    width: 100%;
+    object-fit: cover;
+    max-height: 15rem;
+}
+footer .carousel{
+    flex: 1 1 55rem;
+    padding: 1rem
+   
+}
+footer .carousel .carousel.slide.carousel-fade .carousel-inner .carousel-item img{
+    max-height: 80vh;
+}
+
+.fa-solid{
+    color:#666
+
+}
+
+#btn-stop{
+    display: none;
+}
+
+.radio .nowPlaying .music_name .sound{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+    flex-direction: column;
+}
+.sound #audio-visual{
+    height: 70px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0px;
+
+
+}
+
+
+.sound #audio-visual .audio-wire{
+    height: 50%;
+    margin: 0px 3px;
+    padding: 0px 1px;
+    background-color: #999;
+    animation: .5s infinite alternate;
+    animation-name: animateUpDown;
+    transition: all .2s;
+
+    
+}
+.sound #audio-visual .audio-wire-1{
+        animation-delay: 50ms;
+        
+       
+}
+
+.sound #audio-visual .audio-wire-2{
+    animation-delay: 100ms;
+    
+   
+}
+.sound #audio-visual .audio-wire-3{
+    animation-delay: 200ms;
+    
+   
+}
+.sound #audio-visual .audio-wire-4{
+    animation-delay: 250ms;
+    
+   
+}
+.sound #audio-visual .audio-wire-5{
+    animation-delay: 350ms;
+    
+   
+}
+.sound #audio-visual .audio-wire-6{
+    animation-delay: 400ms;
+    
+   
+}
+.sound #audio-visual .audio-wire-7{
+    animation-delay: 500ms;
+    
+}
+.sound #audio-visual .audio-wire-8{
+    animation-delay: 550ms;
+    
+}
+.sound #audio-visual .audio-wire-9{
+    animation-delay: 650ms;
+    
+}
+.sound #audio-visual .audio-wire-10{
+    animation-delay: 700ms;
+    
+}
+.sound #audio-visual .audio-wire-11{
+    animation-delay: 750ms;
+    
+}
+.sound #audio-visual .audio-wire-12{
+    animation-delay: 850ms;
+    
+}
+.sound #audio-visual .audio-wire-13{
+    animation-delay: 900ms;
+    
+}
+.sound #audio-visual .audio-wire-14{
+    animation-delay: 850ms;
+    
+}
+.sound #audio-visual .audio-wire-15{
+    animation-delay: 750ms;
+    
+}
+.sound #audio-visual .audio-wire-16{
+    animation-delay: 700ms;
+    
+}
+.sound #audio-visual .audio-wire-17{
+    animation-delay: 650ms;
+    
+}
+.sound #audio-visual .audio-wire-18{
+    animation-delay: 550ms;
+    
+}
+.sound #audio-visual .audio-wire-19{
+    animation-delay: 500ms;
+    
+}
+.sound #audio-visual .audio-wire-20{
+    animation-delay: 400ms;
+    
+}
+.sound #audio-visual .audio-wire-21{
+    animation-delay: 350ms;
+    
+}
+.sound #audio-visual .audio-wire-22{
+    animation-delay: 250ms;
+    
+}
+.sound #audio-visual .audio-wire-23{
+    animation-delay: 200ms;
+    
+}
+.sound #audio-visual .audio-wire-24{
+    animation-delay: 100ms;
+    
+}
+.sound #audio-visual .audio-wire-25{
+    animation-delay: 50ms;
+    
+}
+@keyframes animateUpDown{
+    to{
+        height: 90%;
+    }
+    from{
+        height: 50%;
+    }
+}
+
+@media(max-width:991px){
+html{
+    font-size:55%;
+    
+
+
+}
+.header{
+    padding: 2rem;
+
+}
+}
+@media(max-width:768px){
+    .radio .nowPlaying .music_name{
+        margin-left: 0;
+    }
+}
+
+@media(max-width:450px){
+html{
+    font-size:50%;
+    
+
+
+}
+.header{
+    padding: 2rem;
+
+}
+
+
+}
